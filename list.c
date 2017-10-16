@@ -33,7 +33,7 @@ void print_list(struct node * list) {
 
 struct node * free_list(struct node * list) {
   while (list) {
-    struct node * temp;
+    struct node * temp=list;
     list=list->next;
     free(temp);
     //print_list(list);
